@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style/style.css">
-    <title>Mon Babyfoot Interactif</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Connexion Babyfoot</title>
 </head>
 <body>
     <div class="container">
-        <img src="babyfoot.jpg" alt="Babyfoot">
-        <form>
-            <h2>Connexion</h2>
-            <input type="text" placeholder="Identifiant" maxlength="12" required>
-            <input type="password" placeholder="Mot de passe" maxlength="8" required>
-            <button type="submit">Connexion</button>
+        <img src="babyfoot.jpg" alt="Babyfoot" class="background-image">
+        <form id="loginForm" action="game.html" method="POST">
+            <h1>Connexion</h1>
+            <input type="text" name="username" placeholder="Identifiant" maxlength="12" required>
+            <input type="password" name="password" placeholder="Mot de passe" maxlength="8" required>
+            <button type="submit">Se connecter</button>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
