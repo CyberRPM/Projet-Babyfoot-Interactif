@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu de Babyfoot</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="leaderboard">
+            <h2>Meilleurs Joueurs</h2>
+            <ul id="playerList">
+                <!-- Liste des joueurs -->
+            </ul>
+        </div>
+        <div class="game-form">
+            <h2>Inscrire un Joueur</h2>
+            <form id="playerForm">
+                <input type="text" id="playerName" placeholder="Nom du joueur" required>
+                <button type="button" onclick="addPlayer()">Ajouter Joueur</button>
+            </form>
+            <button id="endGameBtn">Fin de Partie</button>
+        </div>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
